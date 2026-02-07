@@ -212,8 +212,5 @@ class Othergon(Collidable):
         #turn the square into an othergon. honestly. fuck it.
         square_othered = Othergon(other.corners)
         return self.with_othergon(square_othered)
-    
 
-othergon = Othergon([[1,1], [0,-2], [4,0]])
-circle = Circle([0, 1], 1)
-square = Square([[0,0], [1,0], [2,0], [2,1]])
+
