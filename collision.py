@@ -4,8 +4,9 @@ import numpy
 
 '''
 usage:
-depending on the type of shape, you can instantiate Point objects, Square (really, rectangle) objects, and Circle objects
-then you can test if they collide with object1.collides(object2) as long as object1 and object2 are in [Square, Point, Circle]
+depending on the type of shape, you can instantiate Point objects, axis-aligned Square (really, rectangle) objects, Circle objects, and 
+"Othergon" (convex polygon) Objects.
+then you can test if they collide with object1.collides(object2) as long as object1 and object2 are in [Square, Point, Circle, Othergon]
 
 for example:
 circle1 = Circle([0,0], 3) #Circle(center, radius)
@@ -209,8 +210,8 @@ class Othergon(Collidable):
         return True
 
     def with_square(self, other):
-        #turn the square into an othergon. honestly. fuck it.
         square_othered = Othergon(other.corners)
         return self.with_othergon(square_othered)
+
 
 
