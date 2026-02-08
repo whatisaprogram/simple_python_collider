@@ -1,6 +1,6 @@
 SIMPLE PYTHON COLLIDER
 
-This module allows you to define four kinds of "shapes" at a certain point in space: Points, Circles, Squares, and Othergons. 
+This module allows you to define four kinds of "shapes" as they exist on some coordinate plane: Points, Circles, Squares, and Othergons. 
 You may then call Shape1.collide(Shape2), and the returned result will be a boolean representing whether or not a collision is
 happening between these two shapes.
 
